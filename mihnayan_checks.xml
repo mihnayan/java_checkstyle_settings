@@ -5,19 +5,18 @@
 
 <!--
 
-  Checkstyle configuration that based on the mix of Sun and Google coding conventions from:
+  Checkstyle configuration that based on coding conventions from the 
+  Java Language Specification at 
+  http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html
 
-    - the Java Language Specification at
-      http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html
-
-  -  Google Java Style
-       https://google-styleguide.googlecode.com/svn-history/r130/trunk/javaguide.html
-
-  Most Checks are configurable, be sure to consult the documentation.
+  Most Checks are configurable, be sure to consult the documentation at
+  http://checkstyle.sourceforge.net
 
   To completely disable a check, just comment it out or delete it from the file.
 
   Finally, it is worth reading the documentation.
+  
+  Author: Mikhail Mangushev
 
 -->
 
@@ -141,7 +140,12 @@
         <module name="AvoidInlineConditionals"/>
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
-        <!-- <module name="HiddenField"/> -->
+		
+        <module name="HiddenField">
+			<property name="ignoreConstructorParameter" value="true"/>
+			<property name="ignoreSetter" value="true"/>
+		</module>
+		
         <module name="IllegalInstantiation"/>
         <module name="InnerAssignment"/>
         <module name="MagicNumber"/>
