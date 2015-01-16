@@ -13,3 +13,8 @@
 
 - Checking for the line length (`LineLength`) increased up to 100 characters
 - Configured the check for hidden fields (`HiddenField`) so that it ignores constructor parameters and the parameter of setter methods.
+- Disabled the check that a package-info.java file exists for each package (`JavadocPackage`).
+- Disabled the check that variables have Javadoc comments (`JavadocVariable`).
+- Disabled the check of javadoc formatting (`JavadocStyle`).
+- Disabled the check that parameters for methods, constructors, and catch blocks are final (`FinalParameters`).
+- Disabled the check that classes are designed for extension (`DesignForExtension`).
