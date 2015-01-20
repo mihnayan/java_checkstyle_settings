@@ -18,3 +18,4 @@
 - Disabled the check of javadoc formatting (`JavadocStyle`).
 - Disabled the check that parameters for methods, constructors, and catch blocks are final (`FinalParameters`).
 - Disabled the check that classes are designed for extension (`DesignForExtension`).
+- Disabled the check for visibility of class members (`VisibilityModifier`).
