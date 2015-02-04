@@ -16,6 +16,11 @@
 - Disabled the check that a package-info.java file exists for each package (`JavadocPackage`).
 - Disabled the check that variables have Javadoc comments (`JavadocVariable`).
 - Disabled the check of javadoc formatting (`JavadocStyle`).
+- `JavadocMethod` check aplies for public scope only.
 - Disabled the check that parameters for methods, constructors, and catch blocks are final (`FinalParameters`).
 - Disabled the check that classes are designed for extension (`DesignForExtension`).
 - Disabled the check for visibility of class members (`VisibilityModifier`).
+- Disabled the check for inline conditionals (`AvoidInlineConditionals`).
+- Disabled `RedundantThrows` check.
+- Included check for [Javadoc summary sentence](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#firstsentence) (`SummaryJavadocCheck`).
+- Included check for indentation of the continuation lines in at-clauses. (`JavadocTagContinuationIndentation`).
